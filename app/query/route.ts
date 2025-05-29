@@ -9,7 +9,7 @@ async function listInvoices() {
     JOIN customers ON invoices.customer_id = customers.id
     WHERE invoices.amount = 666;
   `;
-
+  console.log('data:',data)
 	return data;
 }
 
